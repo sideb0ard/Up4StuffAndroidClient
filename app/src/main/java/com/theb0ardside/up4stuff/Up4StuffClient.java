@@ -14,7 +14,10 @@ import com.loopj.android.http.*;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.List;
+
 import cz.msebera.android.httpclient.Header;
+import cz.msebera.android.httpclient.cookie.Cookie;
 
 public class Up4StuffClient {
 
@@ -44,11 +47,6 @@ public class Up4StuffClient {
         return mInstance;
     }
 
-    // private static AsyncHttpClient client = new AsyncHttpClient();
-
-//    public static void addCookieJar() {
-//        client.setCookieStore(this);
-//    }
 
     public void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
         client.get(getAbsoluteUrl(url), params, responseHandler);
@@ -60,6 +58,23 @@ public class Up4StuffClient {
 
     public void printCookies() {
         System.out.println(cookieStore.getCookies());
+    }
+
+    public void delCookies() {
+        cookieStore.clear();
+    }
+
+    public boolean getSessionCookie() {
+
+        // System.out.println("SESH COOKIE!" + cookieStore.getCookies());
+        List<Cookie> cookies = cookieStore.getCookies();
+        if (cookies.isEmpty()) {
+            System.out.println("Nae COOKIES!\n\n");
+            return false;
+        } else {
+            return true;
+        }
+
     }
 
     private static String getAbsoluteUrl(String relativeUrl) {
