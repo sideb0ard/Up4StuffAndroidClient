@@ -9,18 +9,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.theb0ardside.up4stuff.DisplayConfirmationActivity"
-    tools:showIn="@layout/activity_display_confirmation">
+    tools:context=".UserListActivity"
+    tools:showIn="@layout/activity_user_list">
 
-    <EditText android:id="@+id/confirmation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/conf_hint"
-        android:inputType="number"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_send"
-        android:onClick="sendMessageConfirmation"/>
+        android:text="@string/user_button_send"
+        android:onClick="printUserList"/>
 
 </LinearLayout>

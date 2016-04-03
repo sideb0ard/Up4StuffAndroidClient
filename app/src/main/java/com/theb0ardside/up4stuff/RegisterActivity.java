@@ -28,9 +28,9 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
+        // TODO : find cleaner method for adding application context to client cookie store
+        Up4StuffClient.getInstance();
+        Up4StuffClient.getInstance().init(this);
     }
 
     public void sendMessageSignUp(View view) {
@@ -50,7 +50,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     public class CallAPI {
         public void getHello() throws JSONException {
-            Up4StuffClient.get("/", null, new JsonHttpResponseHandler() {
+
+            Up4StuffClient.getInstance().get("/", null, new JsonHttpResponseHandler() {
 
                 @Override
                 public void onSuccess(int stausCode, Header[] headers, JSONObject response) {
@@ -64,7 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
         private void postNumber(final String number) throws JSONException {
             RequestParams params = new RequestParams("phonenumber", number);
-            Up4StuffClient.post("user/create", params, new JsonHttpResponseHandler() {
+            Up4StuffClient.getInstance().post("user/create", params, new JsonHttpResponseHandler() {
                 @Override
                 public void onSuccess(int stausCode, Header[] headers, JSONObject response) {
                     System.out.println("JSONObject");

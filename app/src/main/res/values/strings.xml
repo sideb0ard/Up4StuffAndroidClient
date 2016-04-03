@@ -4,6 +4,8 @@
     <string name="phone_hint">Enter Your Phone Number</string>
     <string name="conf_hint">Enter Confirmation Code</string>
     <string name="button_send">Send</string>
+    <string name="user_button_send">Get User List</string>
     <string name="title_activity_display_confirmation">DisplayConfirmationActivity</string>
+    <string name="title_activity_cookie">CookieActivity</string>
 
 </resources>

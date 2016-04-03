@@ -5,11 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.theb0ardside.up4stuff.RegisterActivity">
+    tools:context=".UserListActivity">
 
 
-    <include layout="@layout/content_register" />
-
-
+    <include layout="@layout/content_user_list" />
 
 </android.support.design.widget.CoordinatorLayout>

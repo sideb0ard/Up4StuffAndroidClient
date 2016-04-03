@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.theb0ardside.up4stuff">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +23,16 @@
         <activity
             android:name=".DisplayConfirmationActivity"
             android:label="@string/title_activity_display_confirmation"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserListActivity"
+            android:label="@string/title_activity_cookie"
+            android:parentActivityName=".DisplayConfirmationActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.theb0ardside.up4stuff.DisplayConfirmationActivity" />
+        </activity>
     </application>
 
 </manifest>
