@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ValidatePhoneConfirmActivity">
+    tools:context=".RegisterForGoogleCloudMessaging">
 
 
-    <include layout="@layout/content_display_confirmation" />
+    <include layout="@layout/content_register_for_gcm" />
 
 
 

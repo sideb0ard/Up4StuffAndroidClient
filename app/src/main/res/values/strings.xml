@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Up4Stuff</string>
+    <string name="app_name">Up 4 Stuff</string>
     <string name="action_settings">Settings</string>
     <string name="phone_hint">Enter Your Phone Number</string>
     <string name="conf_hint">Enter Confirmation Code</string>
@@ -7,8 +7,47 @@
     <string name="user_button_send">Get User List</string>
     <string name="title_activity_display_confirmation">DisplayConfirmationActivity</string>
     <string name="title_activity_cookie">CookieActivity</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Up 4 Stuff</string>
     <string name="welcome">Welcome To Up4Stuff - Android edition!</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="starting_message">UP 4 STUFF!</string>
+    <string name="home_message">HOME 4 STUFF!</string>
+    <string name="gcm_defaultSenderId">1066532292567</string>
+
+    <string name="no_geocoder_available">No geocoder available</string>
+
+    <string name="fetch_address">Fetch address</string>
+
+    <string name="address_found">Address found</string>
+
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="google_app_id">fresh-lens-809</string>
+
+    <string name="gcm_send_message">Token retrieved and sent to server! You can now use gcmsender to
+        send downstream messages to this app.</string>
+
+
+    <string name="tokey">Yarly</string>
+    <string name="ok_to_validate_phone">Looks like your number is as above - ok to validate?</string>
+
+    <string name="token_error_message">An error occurred while either fetching the InstanceID token,
+        sending the fetched token to the server or subscribing to the PubSub topic. Please try
+        running the sample again.</string>
+    <string name="create_event">Create An Event</string>
+    <string name="view_events">View All Events</string>
+    <string name="title_activity_create_event">Create Event</string>
+    <string name="title_activity_view_events">View Events</string>
+    <string name="title_activity_view_event_invite">New Event Invite</string>
+    <string name="title_homescreen">HOME HONEY I\'M HIGH</string>
+    <string name="event_title">What\'s The Event?</string>
+    <string name="nomnom">nom nom</string>
+    <string name="event_description">Event Description</string>
+    <string name="event_where">Where Is It?</string>
+    <string name="where_it_at">gimme directionzzz</string>
 
 </resources>
